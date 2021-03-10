@@ -34,7 +34,9 @@ Dependencies:
 
 Compiling:
 
-        Kali Linux:     sudo python3 alarm.py [options]
+        In Kali Linux, run...    
+                
+                sudo python3 alarm.py [options]
 
 
 Usage:
