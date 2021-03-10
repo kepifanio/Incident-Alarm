@@ -72,6 +72,11 @@ Potential Improvements:
           types took a fairly similar approach, so there is definitely room
           for improving modularity.
 
+        - PCAPs containing credentials sent via HTTP and IMAP were invoking
+          their respective credential functions twice. For now, the quick
+          solution is the global variable pwd_loop. This should be cleaned
+          up along with the modularity issue.
+
         - I have not done any profiling for time complexity yet. Current
           runtime is reasonable, but certain pcap files are noticeably slower
           than others. Not sure if this has been a function of pcap file length
